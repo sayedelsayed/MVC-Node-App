@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "msedge",
+            "name": "http:///api/user/",
+            "request": "launch",
+            "url": "http:///api/user/"
+        }
+    ]
+}

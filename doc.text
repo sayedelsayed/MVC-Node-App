@@ -1,0 +1,34 @@
+/*
+{const validator=require('../utils/StudentValider');
+
+const Students=[
+    {name:"sayed",dept:"cs",id:1},{name:"body",dept:"cs",id:2},
+      {name:"omima",dept:"cs",id:3},
+  ]
+const getAllStudents=(req,res)=>{ 
+    res.json(Students);
+  };
+  const getById=(req,res)=>{
+
+    let id= req.params.id;
+   const std= Students.find((val,idx,arr)=>{return val.id==id});
+  if(std)
+   res.json(std);
+  else
+  res.send("not found");
+  };
+const createStudent=(req,res)=>{
+    const valid = validator (req.body);
+    
+     if(valid)
+        {
+                req.body.id=Students.length+1;
+                Students.push(req.body);
+                res.json(req.body);}
+   else{
+     res.status(403).send(" forbidden command");
+   }
+   
+   }  
+  module.exports={getAllStudents,getById,createStudent};
+  }*/
